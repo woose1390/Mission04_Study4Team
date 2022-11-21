@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.Furniture</title>
+    <link rel="icon" href="../resources/images/jh_icon.png">
+    <link rel="stylesheet"  type="text/css" href="../css/jeonghyun.css">
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+  
+</head>
+<body>
+    <div class="hbar">
+        <ul class="hbar_">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">관심상품</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li>&nbsp;&nbsp;<input type="text" placeholder="검색어를 입력하세요"><a href="#">&nbsp;&nbsp;   검색</a></li>
+        </ul>
+    </div>
+    <div class="head"><a href="#"><p>J.FURNITURE</p></a></div>
+    <div class="menu">  
+        <ul class="navi">
+            <li><a href="#">침실가구</a></li>
+            <li><a href="#">거실가구</a></li>
+            <li><a href="#">주방가구</a></li>
+            <li><a href="#">욕실가구</a></li>
+            <li><a href="#">사무용가구</a></li>
+            <li><a href="#">기타용품</a></li>
+            <li><a href="#">고객지원</a>lo
+                <ul class="submenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--head----------------------------------------------------->
+
+    <div class="direction">
+        <div class="dbody">
+            <div class="dtitle">찾아오시는 길</div>
+            <div class="dsection"> 
+                <div class="location">
+                    <div id="map" style="width:100%;height:350px;"></div>
+
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a7d21a87aeee04ff289c689951c65323"></script>
+                    <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    
+                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+                    
+                    // 마커가 표시될 위치입니다 
+                    var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
+                    
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+                    
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                    
+                    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                    // marker.setMap(null);    
+                    </script>
+                </div>
+             </div>   
+        </div>
+    </div>
+ 
+
+    <!--footer----------------------------------------------------->
+    
+    <div class="footer">
+        <table class="table3">
+            <tr class="tr3">
+                <td><img src="../resources/images/jh_Jfurniture.png" alt="로고이미지" width="150px"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr class="tr3">
+                <td>(우)45678 , 서울특별시 구로구 구로동 너에게로 123-56 건물주부럽 다동 3층 301호 </td>
+                <td>고객상담: 09:00 ~ 18:00(평일)</td>
+                <td>고객상담 센터 : 국번없이 1234-5678</td>
+                
+            </tr>
+            <tr class="tr3">
+                <td style="font-size:20px ; font-weight: bold;">대표번호 : 1234-5678</td>
+                <td>팩스번호 : 0101-1011-0010</td>
+                <td>Copyright ⓒ J.FURNITURE HAPPYRESTTIME HAVE A GOOD TIME SERVICE. </td>
+            </tr>
+        </table>
+    </div>
+    <script src="../javascript/jeonghyun.js"></script>
+</body>
+</html>

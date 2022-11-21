@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "맑은 고딕";
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a{
+    color: #333;
+}
+body{
+    margin: 0px;
+}
+
+.hbar{
+    width: 100%;
+    height: 40px;
+}
+.hbar_{
+    position: fixed;
+    padding-left: 300px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+}
+.hbar_ >li{
+    float: left;
+    line-height: 40px;
+    margin-left: 50px;
+}
+.hbar_> li:nth-child(5){
+    padding-left: 500px;
+}
+
+
+
+
+.head{
+    background: url(../resources/images/jh_main.jpg) no-repeat;
+    background-size: 100% 300%;
+    background-position: 60%;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    
+}
+.head > a{
+    color: rgba(0, 0, 0, 0.8) ;
+}
+.head > a > p{
+    position: absolute;
+    left: 735px ; top:120px;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
+   
+}
+.menu{
+    width: 1900px;
+    height: 70px;
+    text-align: center;
+    
+    background: rgb(230, 230, 230);
+}
+.navi > li{
+    cursor: pointer;
+    display: block;
+    float: left;
+    background: #C4C8D5;
+    border-left:1px dotted rgba(150, 150, 150, 0.4);
+    height: 70px;
+    width: 270px;
+    
+    font-weight: normal;
+    transition: all 0.3s;
+
+}
+.navi > li:hover{
+    background: #babdc7;
+    font-weight: bold;
+}
+
+.navi > li > a{
+    width: 270px;
+    text-decoration: none;
+    color: rgba(100,100,100,1);
+    height: 20px;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.submenu{
+    display: none;
+    z-index: 20;
+    
+}
+.submenu > li {
+    
+    width: 270px;
+    height: 35px;
+    background-color: #C4C8D5;
+    line-height: 16px;
+    
+    
+}
+.submenu > li:hover{
+    background-color: #fff;
+}
+.submenu > li > a {
+    width: 260px;
+    height: 35px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    
+}
+.submenu > li > a:hover{
+   font-weight: bold;
+}
+/* ↑ head영역 */
+
+.direction{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.dtitle{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ↓  footer영역 */
+.footer{
+    margin-top: 0px;
+    background:#C4C8D5;
+    border: 1px solid #000;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.table3{
+    
+    
+    width: 100%;
+}
+
+.tr3{
+    
+    height: 50px;
+}
+
+.tr3 th{
+    width: 150px;
+    text-align: left;
+    vertical-align: bottom;
+    line-height: 5px;
+    padding:30px 0px 10px 50px;
+   
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+}
+
+.tr3 td{
+    padding-left: 50px;
+}
+
