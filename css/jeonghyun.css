@@ -6,7 +6,6 @@
 *{
     margin: 0 auto;
     padding: 0;
-    font-family: "맑은 고딕";
     font-size: 16px;
     list-style: none;
     text-decoration: none;
@@ -117,7 +116,7 @@ body{
     
 }
 .submenu > li:hover{
-    background-color: #fff;
+    background-color: #babdc7;
 }
 .submenu > li > a {
     width: 260px;
@@ -144,11 +143,34 @@ body{
     font-size: 30px;
 }
 
+#map{
+    margin-bottom: 80px;
+}
 
+.subway{
+    width: 33px;
+    height: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.subway_t{
+    font-size: 20px;
+    
+    line-height: 20px;
+}
+.bus{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-
-
-
+.bus_t{
+    font-size: 20px;
+    display: inline-block;
+    line-height: 20px;
+}
 
 
 
