@@ -2,11 +2,16 @@
 
 /* 초기화 */
 
+@font-face {
+    font-family: "welcome";
+    src: url(../welcome/웰컴체\ Regular.ttf);
+}
+
 *{
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    font-family:  "맑은 고딕";
+    font-family: "welcome";
     color: #222328;
 }
 
@@ -58,19 +63,18 @@ header{
 }
 .login_admin > .login_menu > li {
     width: 60px;
-    height: 50px;
+    height: 30px;
     display: inline-block;
     /* background: green; */
     
 }
 
+.login_admin > .login_menu > li:hover{
+    color: #222328;
+}
 .login_admin > .login_menu > li > a {
     /* background: pink; */
     margin-right: 15px;
-    
-}
-.login_admin > .login_menu > li > span:hover{
-    color: #f00;
 }
 .login_admin > .login_menu > li > a >img{
     display: block;
@@ -82,14 +86,18 @@ header{
 .login_admin > .login_menu > li >span{
     /* background: red; */
     width: 50px;
-    height: 20px;
+    height: 25px;
     font-size: 10px;
     font-weight: bold;
     top: 50px;
     display: block
-    
-    
 }
+.login_admin > .login_menu > li >span:hover{
+    color: #90ee90;
+    cursor: pointer;
+}
+
+
 
 .logo{
     position: absolute;
@@ -113,6 +121,7 @@ h1{
     width: 1000px;
     text-align: center;
     /* background: green; */
+   
 }
 
 .navi > li{
@@ -123,7 +132,7 @@ h1{
     margin-left: -30px;
 }
 
-.navi > li > a{
+.navi  li  a{
     height: 50px;
     width: 180px;
     line-height: 50px;
@@ -131,25 +140,18 @@ h1{
     font-weight: bold;
     color: greenyellow
 }
-/* 메뉴 글씨에 마우스를 올리면 글씨가 빨간색으로 변함 */
-.navi > li > a:hover{
-    cursor: pointer;
-    color: #f00;
+.navi  li  a:hover{
+    color: grey;
 }
 
 .map_list ul{
     text-align: left;
     margin-left: 200px;
-    margin-top: -200px
+    margin-top: -300px
 }
-/* 폰트 구글 Anton으로 변경 */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .map_list ul li{
     font-size: 20px;
     font-weight: bold;
-    font-family:  'Anton', sans-serif;
-    top: -300px;
-
 }
 
     
@@ -158,8 +160,13 @@ footer{
     height: 100px;
     text-align: center;
     background-color: #5bc376;
-     margin-top: 50px;
+     margin-top: 160px;
 } 
 .bdp{
     margin-left: 120px;
+}
+.nav_text{
+    margin-left: 550px;
+    margin-bottom: 40px;
+    font-weight: bold;
 }
