@@ -10,7 +10,7 @@
     list-style: none;
     text-decoration: none;
     /* overflow-x: hidden; */
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif; /*구글폰트에서 연결한 폰트로 지정*/
 }
 
 a{
@@ -26,7 +26,7 @@ body{
     height: 40px;
 }
 .hbar_{
-    position: fixed;
+    position: fixed; /*상단에 고정하기 위해 fixed 활용*/
     padding-left: 300px;
     height: 40px;
     width: 100%;
