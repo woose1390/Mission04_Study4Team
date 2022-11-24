@@ -131,6 +131,7 @@ h1{
     font-weight: bold;
     color: greenyellow
 }
+/* 메뉴 글씨에 마우스를 올리면 글씨가 빨간색으로 변함 */
 .navi > li > a:hover{
     cursor: pointer;
     color: #f00;
@@ -141,6 +142,7 @@ h1{
     margin-left: 200px;
     margin-top: -200px
 }
+/* 폰트 구글 Anton으로 변경 */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .map_list ul li{
     font-size: 20px;
