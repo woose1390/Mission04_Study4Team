@@ -21,27 +21,27 @@ body{
     position: relative;
 }
 
-.hbar{
+.topMenuBar{
     width: 100%;
     height: 40px;
 }
-.hbar_{
+.htopMenuBar_{
     position: fixed; /*상단에 고정하기 위해 fixed 활용*/
-    padding-left: 300px;
+    padding-left: 300px; /*브라우저 왼쪽으로부터 300px만큼 띄움*/
     height: 40px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10;
+    z-index: 10; /* 모든 요소의 상단에 보이도록 z-index:10 을 부여*/
 }
-.hbar_ >li{
-    float: left;
+.htopMenuBar_ >li{
+    float: left; /*왼쪽배치위해 float에 left 속성부여 */
     line-height: 40px;
     margin-left: 50px;
 }
-.hbar_> li:nth-child(5){
-    padding-left: 500px;
+.htopMenuBar_> li:nth-child(5){
+    padding-left: 500px; 
 }
-.hbar_> li > a:hover{
+.htopMenuBar_> li > a:hover{
     font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ body{
     background-position: 60%;
     width: 100%;
     height: 300px;
-    opacity: 0.7;
+    opacity: 0.7; /*투명도 0.7 부여 */
     margin: 0px;
     padding: 0px;
     
@@ -76,10 +76,11 @@ body{
     width: 1900px;
     height: 50px;
     text-align: center;
-    z-index: 20;
+    z-index: 5; /*topMenuBar를 가리지 않고 .direction 보다 상단에 보여지게 하기위해
+                z-index:5 적용*/
     background: rgb(230, 230, 230);
     margin-left: 0;
-    position: relative;
+    position: relative; /*z-index를 사용하기 위해 position:relative 적용*/
     
 }
 .navi > li{
@@ -87,7 +88,6 @@ body{
     display: block;
     float: left;
     background: #C4C8D5;
-    /* border-left:1px dotted rgba(150, 150, 150, 0.4); */
     height: 50px;
     width: 270px;
     font-weight: normal;
@@ -120,7 +120,7 @@ body{
     width: 270px;
     height: 35px;
     background-color: #C4C8D5;
-    line-height: 16px;
+    line-height: 16px; /*상하 중앙정렬을 위해 line-height 적용*/
     
 }
 .submenu > li:hover{
@@ -141,51 +141,23 @@ body{
     font-weight: bold;
 }
 
+/* ↑↑ ----------head영역 -----------------↑↑*/
 
-/* ↑ head영역 */
-
-
-.sidebar{
-    float: left;
-    width: 270px;
-    height: 210;
-    padding-top: 135px;
-    background-color: #f1e8e5;
-}
-.sidebar_navi > ul{
-    width: 270px;
-    height: 100%;
-}
-
-
-
-.sidebar_navi > ul > li{
-    width: 270px;
-    height: 70px;
-    background-color: #f1e8e5;
-    line-height: 70px;
-    text-align: center;
-    cursor: pointer;
-}
-.sidebar_navi > ul > li >a{
-    font-size: 20px;
-    
-}
-
-.sidebar_navi > ul > li:hover{
-    font-weight: bold;
-    background-color: #e8d7d0;
-
-}
 
 
 .direction{
-    position: relative;
+    position: relative; /*z-index 적용 위해 position 적용*/
     margin-left: 25%;
     margin-right: 25%;
     text-align: center;
-    padding-top: 100px;
-    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1; /*topMenuBar 와 navi 보다 아래에 배치하기위해 z-index:1 적용 */
+    border: 2px solid black;
+    border-radius: 10px;
     
 }
 
@@ -199,6 +171,7 @@ body{
 
 #map{
     margin-bottom: 80px;
+    border: 1px solid black;
 }
 .adress_name {
     font-weight: bold;
@@ -238,10 +211,6 @@ body{
 
 
 
-
-
-
-
 /* ↓  footer영역 */
 .footer{
     margin-top: 0px;
@@ -250,18 +219,13 @@ body{
     border-bottom: 1px solid #000;
     width: 100%;
     height: 200px;
-    
-    
 }
 
 .table3{
-    
-    
     width: 100%;
 }
 
 .tr3{
-    
     height: 50px;
 }
 
@@ -270,8 +234,7 @@ body{
     text-align: left;
     vertical-align: bottom;
     line-height: 5px;
-    padding:30px 0px 10px 50px;
-    
+    padding:30px 0px 10px 50px; /*위 오른쪽 아래 왼쪽 순서(시계방향)*/
     font-size: 18px;
     border-bottom: 1px solid #333;
 }
