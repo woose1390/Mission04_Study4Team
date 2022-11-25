@@ -1,15 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
  /* 페이지 전체에 적용 */
 
 body {
     background: #006f84;
-    padding-bottom: (150px);
     min-height: 100%;
     height: auto;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -65,17 +63,22 @@ footer { width: 100%;
 }
 
 
-nav>.menu>li>a:hover{
-    color: pink;
+nav>.menu>li:hover{
+    
     background-color: cornflowerblue;
+}
+
+nav>.menu>li:hover a{
+    
+    color: pink;
 }
 /* 커서를 올렸을 때 반응이 있다는 느낌을 주기 위해 백그라운드컬러도 변경 */
 
 
-.menu{float:right; width: 100%;}
+.menu{float: right; width: 100%; background-color: #253342 }
 
-.menu li{float:left; list-style: none; background-color: #253342;}
+.menu li{float: left; list-style: none;}
 
-.menu a{line-height: 75px; color: white; padding: 0 109px; display: block; text-decoration: none;}
+.menu a{line-height: 75px; color: white; text-decoration: none; margin-inline: 109px;}
 
 
